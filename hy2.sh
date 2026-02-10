@@ -6,7 +6,7 @@
 set -e
 
 # ---------- 默认配置 ----------
-HYSTERIA_VERSION="v2.6.5"
+HYSTERIA_VERSION="v2.7.0"
 DEFAULT_PORT=22222         # 自适应端口
 AUTH_PASSWORD="ieshare2025"   # 建议修改为复杂密码
 CERT_FILE="cert.pem"
@@ -147,6 +147,7 @@ main() {
 }
 
 main "$@"
+
 
 
 
