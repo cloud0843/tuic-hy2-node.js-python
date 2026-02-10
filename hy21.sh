@@ -58,8 +58,8 @@ download_binary() {
         return
     fi
     # 修正下载链接：移除多余的app路径，直接使用版本号
-    URL="https://github.com/apernet/hysteria/releases/download/${HYSTERIA_VERSION}/${BIN_NAME}"
-    echo "⏳ 下载 Hysteria2 ${HYSTERIA_VERSION}: $URL"
+    URL="https://github.com/apernet/hysteria/releases/download/${2.7.0}/${BIN_NAME}"
+    echo "⏳ 下载 Hysteria2 ${2.7.0}: $URL"
     curl -L --retry 3 --connect-timeout 30 -o "$BIN_PATH" "$URL"
     chmod +x "$BIN_PATH"
     echo "✅ 下载完成并设置可执行: $BIN_PATH"
